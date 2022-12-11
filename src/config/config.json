@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postulante",
+    "password": "solucionatica2022",
+    "database": "postgres",
+    "host": "reclutamiento-instance-1.cgcdn4lykdst.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postulante",
+    "password": "solucionatica2022",
+    "database": "postgres",
+    "host": "reclutamiento-instance-1.cgcdn4lykdst.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postulante",
+    "password": "solucionatica2022",
+    "database": "postgres",
+    "host": "reclutamiento-instance-1.cgcdn4lykdst.us-east-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
