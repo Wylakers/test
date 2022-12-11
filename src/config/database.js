@@ -10,10 +10,12 @@ const username = process.env.DBUSER || "postulante";
 const password = process.env.PASSWORD || "solucionatica2022";
 const database = process.env.DATABASE || "postgres";
 const dialect = process.env.DIALECT || "postgres";
+const port = process.env.PORT || 5432;
 
 const sequelize = new Sequelize(database, username, password, {
   host: hostname,
   dialect: dialect,
+  port: port,
 });
 
 export default sequelize;
