@@ -7,6 +7,8 @@ import sequelize from "../config/database.js";
 
 export const getAll = async (req, res) => {
   try {
+    // const anps = await Anp.findAll();
+
     const anps = await sequelize.query("SELECT * FROM anp", {
       type: QueryTypes.SELECT,
     });
@@ -20,6 +22,8 @@ export const getAll = async (req, res) => {
 export const getOne = async (req, res) => {
   try {
     const { id } = req.params;
+
+    // const anp = await Anp.findByPk(id);
 
     const singleAnp = await sequelize.query(
       `SELECT * FROM anp WHERE id=${id}`,

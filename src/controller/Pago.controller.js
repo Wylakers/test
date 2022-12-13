@@ -38,6 +38,18 @@ export const create = async (req, res) => {
   try {
     const { total, cantidad_boletos } = req.body;
 
+    // const crearPago = await Pago.create(
+    //   {
+    //     total,
+    //     cantidad_boletos,
+    //     nombre_postul,
+    //     anps: [id],
+    //   },
+    //   {
+    //     include: Anp,
+    //   }
+    // );
+
     const crearPago = await sequelize.query(
       `INSERT INTO pago (id,total,cantidad_boletos,nombre_postul) VALUES (7,${total},${cantidad_boletos},'Rodrigo Perez') RETURNING id`,
       {
